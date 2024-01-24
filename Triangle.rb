@@ -1,12 +1,11 @@
 def triangle(x, y, z)
-  if x = y
-    if y = z
-      puts "equilateral"
-    else
-      puts "isosceles"
-  elif y = z
-      puts "isosceles"
-  elif x = z
-      puts "isosceles"
+  if x == y && y == z
+    puts "equilateral"
+  elsif x == y || x == z || y == z
+    puts "isosceles"
   else
-      puts "scalene"
+    puts "scalene"
+  end
+end
+
+triangle(1, 2, 3)
